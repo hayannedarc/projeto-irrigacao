@@ -20,14 +20,14 @@ String strMSG = "0";
 char mensagem[30];
 
 //Informações da Rede WIFI para conexão com o HiveMQ, que estabelece conectividade com o Broker que fará o monitoramento dos Solos
-const char* ssid = "Hayanne";             //SSID da rede WIFI
+const char* ssid = "Hayanne";           //SSID da rede WIFI
 const char* password =  "D@rc2961";    //senha da rede wifi
 //Informações da Instância do broker MQTT
-const char* mqttServer = "2fc9a9ccd211409690351ea7a10f9862.s1.eu.hivemq.cloud";   //server
-const char* mqttUser = "Hayanne";              //user
-const char* mqttPassword = "Ga190511";      //password
-const int mqttPort = 8883;                     //port
-const char* mqttTopicSub = "hay123/irrigacao";      //tópico que será assinado no Broker
+const char* mqttServer = "2fc9a9ccd211409690351ea7a10f9862.s1.eu.hivemq.cloud"; //server
+const char* mqttUser = "Hayanne";        //user
+const char* mqttPassword = "Ga190511";  //password
+const int mqttPort = 8883;   //port
+const char* mqttTopicSub = "hay123/irrigacao";//tópico que será assinado no Broker
 
 WiFiClientSecure espClient;
 PubSubClient client(espClient);
@@ -42,7 +42,7 @@ void setup() {
 
   WiFi.begin(ssid, password);
   espClient.setInsecure(); // dispensa o uso de certificado para autenticação no HiveMQ
-
+ 
   Serial.print("Entrando no Setup");
 
   while (WiFi.status() != WL_CONNECTED) {
