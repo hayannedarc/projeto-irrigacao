@@ -1,4 +1,5 @@
 # projeto-irrigacao
+<<<<<<< HEAD
 
 # Projeto de Irrigação Automatizada com Monitoramento de Umidade do Solo
 
@@ -15,3 +16,5 @@ O projeto conta com sensor de umidade do solo, LEDs que indicam as condições d
 Assista à demonstração completa no YouTube:  
 [https://www.youtube.com/watch?v=LVW4PZmowGA)
 
+=======
+>>>>>>> 5136888d2c786115a74d9be3c56c81288f0056d0
